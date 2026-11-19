@@ -1,5 +1,31 @@
-<img
-  src="https://raw.githubusercontent.com/FarhanScripts8/github-profile-assets/main/assets/svg/contributions.svg"
-  width="100%"
-  alt="Animated contribution overview"
-/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <style>
+    .bar {
+      transform-origin: left bottom;
+      transform: scaleY(0);
+      animation: grow 0.8s ease forwards;
+    }
+    .b1 { animation-delay: 0.2s; }
+    .b2 { animation-delay: 0.35s; }
+    .b3 { animation-delay: 0.5s; }
+    .b4 { animation-delay: 0.65s; }
+    .b5 { animation-delay: 0.8s; }
+
+    @keyframes grow {
+      to { transform: scaleY(1); }
+    }
+  </style>
+
+  <rect width="900" height="300" rx="20" fill="#0d1117"/>
+  <rect x="0" y="0" width="900" height="6" fill="#e63946"/>
+
+  <text x="45" y="65" fill="#ffffff" font-size="28" font-weight="700">
+    Contribution Overview
+  </text>
+
+  <rect class="bar b1" x="70" y="230" width="90" height="40" rx="8" fill="#e63946"/>
+  <rect class="bar b2" x="220" y="190" width="90" height="80" rx="8" fill="#ff6b6b"/>
+  <rect class="bar b3" x="370" y="150" width="90" height="120" rx="8" fill="#e63946"/>
+  <rect class="bar b4" x="520" y="170" width="90" height="100" rx="8" fill="#ff6b6b"/>
+  <rect class="bar b5" x="670" y="120" width="90" height="150" rx="8" fill="#e63946"/>
+</svg>
